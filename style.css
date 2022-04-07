@@ -111,8 +111,17 @@ hr{
     background-color: #00FF00;
     border: none;
     border-radius: 5px;
-    width: 50%;
-    margin-left: 25%;
+    width: 35%;
+    margin-left: 10%;
+    margin-top: 5px;
+    padding: 5px;
+
+}
+.button-back{
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    width: 35%;
     margin-top: 5px;
     padding: 5px;
 
