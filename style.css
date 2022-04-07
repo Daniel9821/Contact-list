@@ -1,0 +1,119 @@
+body{
+    background-color:aliceblue;
+    align-items: center;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-list{
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.add-list input{
+    width: 80%;
+    margin: 5px;
+}
+
+.add{
+    background-color: #00FF00;
+    width: 40%;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+}
+
+.button-list{
+    background-color: #0000FF;
+    width: 40%;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+}
+
+.button-list a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* List Contact */
+
+.list-contact{
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 500px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+.button-delete{
+    background-color: red;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    width: 50px;
+    padding: 5px;
+}
+
+.button-edit{
+    background-color:greenyellow;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    width: 50px;
+    padding: 5px;
+}
+
+.button-details{
+    background-color:#0000FF;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    width: 50px;
+    padding: 5px;
+}
+
+.button-details a{
+    text-decoration: none;
+    color: #fff;
+}
+
+hr{
+    margin-bottom: 40px;
+}
+
+.list-contact input{
+    width: 41%;
+    margin-top: 5px;
+    border: none;
+}
+
+.button-save{
+    background-color: #00FF00;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5px;
+    padding: 5px;
+
+}
