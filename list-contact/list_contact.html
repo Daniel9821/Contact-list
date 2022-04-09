@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>List Contact</title>
+    </head>
+    <body>
+        <div class="container">
+                <div id="page-contatos" class="list-contact">
+                    <h1>Contact list</h1>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Contact</th>
+                                <th scope="col">E-mail</th>
+                                <th scope="col">Photo</th>
+                                <th scope="col"> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="item in list">
+                                <th scope="row">{{ item.id }}</th>
+                                <td>{{ item.name }}</td>
+                                <td>{{ item.contact }}</td>
+                                <td>{{ item.email }}</td>
+                                <td>{{ item.photo }}</td>
+                                <td>
+                                    <button class="button-details"><a href="details.html">Details</a></button>
+                                    <button @click="edit(item)" class="button-edit" id="btn-div">Edit</button>
+                                    <button @click="remove(item)" class="button-delete">Delete</button>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <hr>
+                <div class="divEdit"> 
+                    <label>Name: </label>
+                    <input v-model="contact.name">
+                    <label>Contact: </label>
+                    <input type="tel" v-model="contact.contact">
+                    <label>E-mail: </label>
+                    <input type="email" v-model="contact.email">
+                    <label>photo: </label>
+                    <input type="file" v-model="contact.photo">
+                    <button @click="add()" class="button-save" id="btn-ocultar">Save</button>
+                    <button @click="add()" class="button-back">Back</button>
+                </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="script.js"></script>
+        <script src="div-edit.js"></script>
+    </body>
+
+</html>

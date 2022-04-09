@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Lista de contatos Vue js</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="page-contatos" class="add-list">
+                <h1>Add new contact</h1>
+                <div>
+                    <label>Name: </label>
+                    <input v-model="contact.name">
+                    <label>Contact: </label>
+                    <input type="tel" v-model="contact.contact">
+                    <label>E-mail: </label>
+                    <input type="email" v-model="contact.email">
+                    <label>photo: </label>
+                    <input type="file" v-on="contact.photo">
+                    <button @click="add()" class="add">Add</button>
+                    <button class="button-list"><a href="list_contact.html">List contact</a></button>
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
